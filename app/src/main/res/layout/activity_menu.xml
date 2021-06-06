@@ -6,12 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
 
-    <com.google.android.material.textview.MaterialTextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
 
-        />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_title"
+            android:textSize="26sp"
+            android:textAlignment="center"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/video_to_text_button"
+            android:layout_above="@id/text_to_video_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/video_to_text"
+            app:cornerRadius="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/text_to_video_button"
+            android:layout_above="@id/rights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_to_video"
+            app:cornerRadius="10dp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/rights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/app_rights"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
