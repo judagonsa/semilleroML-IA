@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SemilleroApp">
-        <activity android:name=".TextToVideoActivity"></activity>
+        <activity
+            android:name=".TextToVideoActivity"
+            android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".VideoToTextActivity"
             android:parentActivityName=".MenuActivity" />
