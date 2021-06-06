@@ -3,7 +3,7 @@
     <string name="app_rights">Todos los derechos reservados 2021</string>
 
     // Menu
-    <string name="menu_title">Bienvenido a nuestra app taaal</string>
+    <string name="menu_title">Bienvenido a nuestra app \n taaal</string>
     <string name="video_to_text">Vídeo a texto</string>
     <string name="text_to_video">texto a Vídeo</string>
 </resources>
