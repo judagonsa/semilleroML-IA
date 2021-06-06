@@ -29,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/video_to_text"
+            android:textColor="@color/white"
             app:cornerRadius="10dp"/>
 
         <com.google.android.material.button.MaterialButton
@@ -38,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin_large"
             android:text="@string/text_to_video"
+            android:textColor="@color/white"
             app:cornerRadius="10dp"/>
 
         <com.google.android.material.textview.MaterialTextView
