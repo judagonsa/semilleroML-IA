@@ -16,6 +16,7 @@
         android:focusable="true">
 
         <RelativeLayout
+            android:id="@+id/message_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
