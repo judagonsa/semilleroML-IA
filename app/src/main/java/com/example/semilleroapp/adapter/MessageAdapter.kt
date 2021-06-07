@@ -9,7 +9,7 @@ import com.example.semilleroapp.R
 class MessageAdapter(
     private val context: Context,
     private val messages: ArrayList<String>
-): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+): RecyclerView.Adapter<ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return RecyclerView.ViewHolder(
