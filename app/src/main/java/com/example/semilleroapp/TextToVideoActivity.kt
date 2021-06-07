@@ -8,6 +8,7 @@ import android.text.TextWatcher
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.semilleroapp.adapter.MessageAdapter
 import kotlinx.android.synthetic.main.activity_text_to_video.*
 
@@ -22,13 +23,14 @@ class TextToVideoActivity : AppCompatActivity() {
 
     private fun updateAdapter() {
         messages.add(input_message.text.toString())
-        updateAdapter()
         input_message.setText("")
+        input_message_parent.error = null
         messages_recycler.adapter = MessageAdapter(this, messages)
     }
 
     private fun initComponents() {
-        updateAdapter()
+        val linearManager = LinearLayoutManager(this)
+        messages_recycler.layoutManager = linearManager
         input_message_parent.setEndIconOnClickListener {
             if(input_message.text!!.isEmpty()) {
                 input_message_parent.error = getString(R.string.message_empty_error)
