@@ -9,7 +9,7 @@
     // Base colors
     <color name="primaryColor">#0CA789</color>
 
-    <color name="black_opaque">#B3000000</color>
+    <color name="black_opaque">#80000000</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
