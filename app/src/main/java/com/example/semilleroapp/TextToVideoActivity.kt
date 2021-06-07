@@ -6,20 +6,31 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.inputmethod.InputMethodManager
+import com.example.semilleroapp.adapter.MessageAdapter
 import kotlinx.android.synthetic.main.activity_text_to_video.*
 
 class TextToVideoActivity : AppCompatActivity() {
+
+    private val messages = ArrayList<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_text_to_video)
         initComponents()
     }
 
+    private fun updateAdapter() {
+        messages_recycler.adapter = MessageAdapter(this, messages)
+    }
+
     private fun initComponents() {
+        updateAdapter()
         input_message_parent.setEndIconOnClickListener {
             if(input_message.text!!.isEmpty()) {
                 input_message_parent.error = getString(R.string.message_empty_error)
             } else {
+                messages.add(input_message.text.toString())
+                updateAdapter()
+                input_message.setText("")
                 hideKeyboard()
             }
         }
