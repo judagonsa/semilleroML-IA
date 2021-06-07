@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.semilleroapp.R
+import com.example.semilleroapp.extensions.toast
 import com.xwray.groupie.ViewHolder
 import kotlinx.android.synthetic.main.message_item.view.*
 
@@ -23,7 +24,7 @@ class MessageAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.itemView.message.text = messages[position]
-        holder.itemView.message_content.setOnClickListener {  }
-        holder.itemView.play_message_button.setOnClickListener {  }
+        holder.itemView.message_content.setOnClickListener { context.toast(messages[position]) }
+        holder.itemView.play_message_button.setOnClickListener { context.toast(messages[position]) }
     }
 }
