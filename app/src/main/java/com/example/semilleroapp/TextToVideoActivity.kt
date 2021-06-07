@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
+import android.widget.TextView
 import com.example.semilleroapp.adapter.MessageAdapter
 import kotlinx.android.synthetic.main.activity_text_to_video.*
 
@@ -19,6 +21,9 @@ class TextToVideoActivity : AppCompatActivity() {
     }
 
     private fun updateAdapter() {
+        messages.add(input_message.text.toString())
+        updateAdapter()
+        input_message.setText("")
         messages_recycler.adapter = MessageAdapter(this, messages)
     }
 
@@ -28,12 +33,18 @@ class TextToVideoActivity : AppCompatActivity() {
             if(input_message.text!!.isEmpty()) {
                 input_message_parent.error = getString(R.string.message_empty_error)
             } else {
-                messages.add(input_message.text.toString())
                 updateAdapter()
-                input_message.setText("")
                 hideKeyboard()
             }
         }
+        input_message.setOnEditorActionListener(TextView.OnEditorActionListener { _, actionId, _ ->
+            if (actionId == EditorInfo.IME_ACTION_SEND) {
+                // Your piece of code on keyboard search click
+                updateAdapter()
+                hideKeyboard()
+                true
+            } else false
+        })
         input_message.addTextChangedListener(object: TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
 
