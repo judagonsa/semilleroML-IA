@@ -13,6 +13,14 @@
 		91A278B426731E9A00993279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A278B226731E9A00993279 /* Main.storyboard */; };
 		91A278B626731E9B00993279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A278B526731E9B00993279 /* Assets.xcassets */; };
 		91A278B926731E9B00993279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A278B726731E9B00993279 /* LaunchScreen.storyboard */; };
+		91DEDF4226732DE100906050 /* VideoToText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DEDF3726732DE100906050 /* VideoToText.storyboard */; };
+		91DEDF4326732DE100906050 /* VideoToTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DEDF3826732DE100906050 /* VideoToTextViewController.swift */; };
+		91DEDF4426732DE100906050 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DEDF3A26732DE100906050 /* Home.storyboard */; };
+		91DEDF4526732DE100906050 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DEDF3C26732DE100906050 /* HomeViewController.swift */; };
+		91DEDF4626732DE100906050 /* TextToVideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DEDF3E26732DE100906050 /* TextToVideoViewCell.swift */; };
+		91DEDF4726732DE100906050 /* TextToVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DEDF3F26732DE100906050 /* TextToVideoViewController.swift */; };
+		91DEDF4826732DE100906050 /* TextToVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DEDF4026732DE100906050 /* TextToVideo.storyboard */; };
+		91DEDF4926732DE100906050 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91DEDF4126732DE100906050 /* Info.plist */; };
 		A449E67D0DEEB7BD4752EA77 /* Pods_AppSemillero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD99B9523A9A30A455273D1F /* Pods_AppSemillero.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +33,14 @@
 		91A278B526731E9B00993279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91A278B826731E9B00993279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91A278BA26731E9B00993279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91DEDF3726732DE100906050 /* VideoToText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VideoToText.storyboard; sourceTree = "<group>"; };
+		91DEDF3826732DE100906050 /* VideoToTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoToTextViewController.swift; sourceTree = "<group>"; };
+		91DEDF3B26732DE100906050 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Home.storyboard; sourceTree = "<group>"; };
+		91DEDF3C26732DE100906050 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		91DEDF3E26732DE100906050 /* TextToVideoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToVideoViewCell.swift; sourceTree = "<group>"; };
+		91DEDF3F26732DE100906050 /* TextToVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToVideoViewController.swift; sourceTree = "<group>"; };
+		91DEDF4026732DE100906050 /* TextToVideo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextToVideo.storyboard; sourceTree = "<group>"; };
+		91DEDF4126732DE100906050 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1474DCA55F156E1178DC2FA /* Pods-AppSemillero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSemillero.debug.xcconfig"; path = "Target Support Files/Pods-AppSemillero/Pods-AppSemillero.debug.xcconfig"; sourceTree = "<group>"; };
 		D01F3795C859812BC9A780B6 /* Pods-AppSemillero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSemillero.release.xcconfig"; path = "Target Support Files/Pods-AppSemillero/Pods-AppSemillero.release.xcconfig"; sourceTree = "<group>"; };
 		DD99B9523A9A30A455273D1F /* Pods_AppSemillero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppSemillero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +87,9 @@
 		91A278AB26731E9A00993279 /* AppSemillero */ = {
 			isa = PBXGroup;
 			children = (
+				91DEDF3926732DE100906050 /* Home */,
+				91DEDF3D26732DE100906050 /* TextToVideo */,
+				91DEDF3626732DE100906050 /* VideoToText */,
 				91A278AC26731E9A00993279 /* AppDelegate.swift */,
 				91A278AE26731E9A00993279 /* SceneDelegate.swift */,
 				91A278B026731E9A00993279 /* ViewController.swift */,
@@ -82,13 +101,41 @@
 			path = AppSemillero;
 			sourceTree = "<group>";
 		};
+		91DEDF3626732DE100906050 /* VideoToText */ = {
+			isa = PBXGroup;
+			children = (
+				91DEDF3726732DE100906050 /* VideoToText.storyboard */,
+				91DEDF3826732DE100906050 /* VideoToTextViewController.swift */,
+			);
+			path = VideoToText;
+			sourceTree = "<group>";
+		};
+		91DEDF3926732DE100906050 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				91DEDF3A26732DE100906050 /* Home.storyboard */,
+				91DEDF3C26732DE100906050 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		91DEDF3D26732DE100906050 /* TextToVideo */ = {
+			isa = PBXGroup;
+			children = (
+				91DEDF3E26732DE100906050 /* TextToVideoViewCell.swift */,
+				91DEDF3F26732DE100906050 /* TextToVideoViewController.swift */,
+				91DEDF4026732DE100906050 /* TextToVideo.storyboard */,
+				91DEDF4126732DE100906050 /* Info.plist */,
+			);
+			path = TextToVideo;
+			sourceTree = "<group>";
+		};
 		ADF428FE74FC8D5CDDDE9294 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				A1474DCA55F156E1178DC2FA /* Pods-AppSemillero.debug.xcconfig */,
 				D01F3795C859812BC9A780B6 /* Pods-AppSemillero.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,9 +197,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91DEDF4226732DE100906050 /* VideoToText.storyboard in Resources */,
+				91DEDF4426732DE100906050 /* Home.storyboard in Resources */,
 				91A278B926731E9B00993279 /* LaunchScreen.storyboard in Resources */,
 				91A278B626731E9B00993279 /* Assets.xcassets in Resources */,
+				91DEDF4826732DE100906050 /* TextToVideo.storyboard in Resources */,
 				91A278B426731E9A00993279 /* Main.storyboard in Resources */,
+				91DEDF4926732DE100906050 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91DEDF4726732DE100906050 /* TextToVideoViewController.swift in Sources */,
+				91DEDF4626732DE100906050 /* TextToVideoViewCell.swift in Sources */,
+				91DEDF4526732DE100906050 /* HomeViewController.swift in Sources */,
+				91DEDF4326732DE100906050 /* VideoToTextViewController.swift in Sources */,
 				91A278B126731E9A00993279 /* ViewController.swift in Sources */,
 				91A278AD26731E9A00993279 /* AppDelegate.swift in Sources */,
 				91A278AF26731E9A00993279 /* SceneDelegate.swift in Sources */,
@@ -211,6 +266,14 @@
 				91A278B826731E9B00993279 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		91DEDF3A26732DE100906050 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91DEDF3B26732DE100906050 /* en */,
+			);
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
