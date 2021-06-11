@@ -20,7 +20,6 @@
 		91DEDF4626732DE100906050 /* TextToVideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DEDF3E26732DE100906050 /* TextToVideoViewCell.swift */; };
 		91DEDF4726732DE100906050 /* TextToVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DEDF3F26732DE100906050 /* TextToVideoViewController.swift */; };
 		91DEDF4826732DE100906050 /* TextToVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DEDF4026732DE100906050 /* TextToVideo.storyboard */; };
-		91DEDF4926732DE100906050 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91DEDF4126732DE100906050 /* Info.plist */; };
 		A449E67D0DEEB7BD4752EA77 /* Pods_AppSemillero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD99B9523A9A30A455273D1F /* Pods_AppSemillero.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		91DEDF3E26732DE100906050 /* TextToVideoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToVideoViewCell.swift; sourceTree = "<group>"; };
 		91DEDF3F26732DE100906050 /* TextToVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToVideoViewController.swift; sourceTree = "<group>"; };
 		91DEDF4026732DE100906050 /* TextToVideo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextToVideo.storyboard; sourceTree = "<group>"; };
-		91DEDF4126732DE100906050 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1474DCA55F156E1178DC2FA /* Pods-AppSemillero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSemillero.debug.xcconfig"; path = "Target Support Files/Pods-AppSemillero/Pods-AppSemillero.debug.xcconfig"; sourceTree = "<group>"; };
 		D01F3795C859812BC9A780B6 /* Pods-AppSemillero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSemillero.release.xcconfig"; path = "Target Support Files/Pods-AppSemillero/Pods-AppSemillero.release.xcconfig"; sourceTree = "<group>"; };
 		DD99B9523A9A30A455273D1F /* Pods_AppSemillero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppSemillero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,7 +123,6 @@
 				91DEDF3E26732DE100906050 /* TextToVideoViewCell.swift */,
 				91DEDF3F26732DE100906050 /* TextToVideoViewController.swift */,
 				91DEDF4026732DE100906050 /* TextToVideo.storyboard */,
-				91DEDF4126732DE100906050 /* Info.plist */,
 			);
 			path = TextToVideo;
 			sourceTree = "<group>";
@@ -203,7 +200,6 @@
 				91A278B626731E9B00993279 /* Assets.xcassets in Resources */,
 				91DEDF4826732DE100906050 /* TextToVideo.storyboard in Resources */,
 				91A278B426731E9A00993279 /* Main.storyboard in Resources */,
-				91DEDF4926732DE100906050 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
