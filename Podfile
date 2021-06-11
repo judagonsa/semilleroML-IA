@@ -6,5 +6,5 @@ target 'AppSemillero' do
   use_frameworks!
 
   # Pods for AppSemillero
-
+  pod 'OpenCV'
 end

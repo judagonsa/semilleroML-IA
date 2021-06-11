@@ -13,6 +13,7 @@
 		91A278B426731E9A00993279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A278B226731E9A00993279 /* Main.storyboard */; };
 		91A278B626731E9B00993279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A278B526731E9B00993279 /* Assets.xcassets */; };
 		91A278B926731E9B00993279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A278B726731E9B00993279 /* LaunchScreen.storyboard */; };
+		A449E67D0DEEB7BD4752EA77 /* Pods_AppSemillero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD99B9523A9A30A455273D1F /* Pods_AppSemillero.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		91A278B526731E9B00993279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91A278B826731E9B00993279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91A278BA26731E9B00993279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1474DCA55F156E1178DC2FA /* Pods-AppSemillero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSemillero.debug.xcconfig"; path = "Target Support Files/Pods-AppSemillero/Pods-AppSemillero.debug.xcconfig"; sourceTree = "<group>"; };
+		D01F3795C859812BC9A780B6 /* Pods-AppSemillero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSemillero.release.xcconfig"; path = "Target Support Files/Pods-AppSemillero/Pods-AppSemillero.release.xcconfig"; sourceTree = "<group>"; };
+		DD99B9523A9A30A455273D1F /* Pods_AppSemillero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppSemillero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A449E67D0DEEB7BD4752EA77 /* Pods_AppSemillero.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11AF6A39DD8BBF858D226454 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD99B9523A9A30A455273D1F /* Pods_AppSemillero.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		91A278A026731E9A00993279 = {
 			isa = PBXGroup;
 			children = (
 				91A278AB26731E9A00993279 /* AppSemillero */,
 				91A278AA26731E9A00993279 /* Products */,
+				ADF428FE74FC8D5CDDDE9294 /* Pods */,
+				11AF6A39DD8BBF858D226454 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = AppSemillero;
 			sourceTree = "<group>";
 		};
+		ADF428FE74FC8D5CDDDE9294 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1474DCA55F156E1178DC2FA /* Pods-AppSemillero.debug.xcconfig */,
+				D01F3795C859812BC9A780B6 /* Pods-AppSemillero.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91A278BD26731E9B00993279 /* Build configuration list for PBXNativeTarget "AppSemillero" */;
 			buildPhases = (
+				A8207E05E6FFED7FD1AD1E45 /* [CP] Check Pods Manifest.lock */,
 				91A278A526731E9A00993279 /* Sources */,
 				91A278A626731E9A00993279 /* Frameworks */,
 				91A278A726731E9A00993279 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8207E05E6FFED7FD1AD1E45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppSemillero-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91A278A526731E9A00993279 /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		91A278BE26731E9B00993279 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1474DCA55F156E1178DC2FA /* Pods-AppSemillero.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +354,7 @@
 		};
 		91A278BF26731E9B00993279 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D01F3795C859812BC9A780B6 /* Pods-AppSemillero.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
